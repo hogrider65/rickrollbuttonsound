@@ -1,18 +1,66 @@
+<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3894951415455149"
+  crossorigin="anonymous"></script></head>
+
+
+
 <title>??</title>
+
 <body>
+
+<div  id="Neews" class="Neews">
+<p class="t1d">05/03/2023</p>
+<p class="t1">Aggiunta casella news:
+  Qui potete leggere le novità sul sito
+<p class="t1d">05/03/2023</p>
+<p class="t1">Nuovo suono disponibile:
+  Da oggi disponibile hogrider EARRAPE 
+</p>
+</p>
+
+</div>
+
+
+<img src="C:\Users\brutm\Downloads\keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz48.svg" onclick="Dd()" class="arrow">
+
+
+
   <audio id="rick roll">
     <source src="rick-roll-bass-boosted_ZPqkNIT.mp3" type="audio/ogg">
     <source src="rick-roll-bass-boosted_ZPqkNIT.mp3" type="audio/mpeg">
     your browser does not support the audio element
   </audio>
 
-  <button onclick="playAudio()" type="audio7ogg">
+  <audio id="hog rider">
+    <source src="hog rider EARRAPE.mp3" type="audio/ogg">
+    <source src="hog rider EARRAPE.mp3" type="audio/mpeg">
+    your 
+  </audio>
+
+
+
+  <button onclick="playdAudio()" type="audio7ogg" class="hog">
+    <span class="shadow1"></span>
+    <span class="edge1"></span>
+    <span class="front1"><b>Hog rider</b></span>
+    </button>
+
+  <button onclick="playAudio()" type="audio7ogg" class="rick">
   <span class="shadow"></span>
   <span class="edge"></span>
-  <span class="front text"><b>Click Here</b></span>
+  <span class="front"><b>Rick roll</b></span>
   </button>
 
+
   <script>
+
+let Neews = document.getElementById("Neews");
+
+function Dd(){
+  Neews.classList.toggle("ok");
+} 
+
+
+
     var x = document.getElementById("rick roll"); 
     
     function playAudio() { 
@@ -22,17 +70,71 @@
     function pauseAudio() { 
       x.pause(); 
     } 
+
+    var z = document.getElementById("hog rider"); 
+    
+    function playdAudio() { 
+      z.play(); 
+    } 
+    
+    function pausedAudio() { 
+      z.pause(); 
+    } 
+
+
+
+
+    console.log("gfgf");
     </script>
     <img src="Dollar_Delevoepment__1_-removebg-preview.png" class="logo">
     </body>
-    <
+    
   <body  bgcolor="#212121"></body>
 
 
 <div>
 <body>
   <style>
-    
+.t1d{
+  border: 2px solid rgb(17, 60, 100);
+  font-family: Franklin Gothic Medium;
+  box-shadow: 1px 1px 5px black;
+}
+.t1{
+  border: 2px solid black;
+  font-family: Franklin Gothic Medium;
+  box-shadow: 1px 1px 5px black;
+}
+.Neews{
+opacity: 0%;
+background-color: #ffffff;
+}
+.ok {
+  position:absolute;
+  top: 1%;
+  left: 80%;
+  background-color:rgb(113, 116, 116);
+  opacity: 100%;
+  width: 300px;
+  height:300px;
+  border-radius: 5px;
+
+}
+.arrow:hover{
+
+    transform: rotate(90deg);
+}
+.arrow{
+    position: absolute;
+    top:   5px ;
+    left: 96%;
+    background-color: #212121;
+    border: 0px solid #212121;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+  }
+
     .logo{
       position:sticky;
       top: 100%;
@@ -40,8 +142,8 @@
       height: 50px;
       width: 300px;
     }
-     button {
-      position: sticky;
+     .rick {
+      position: absolute;
       top: 40%;
       left: 46.50%;
       border: none;
@@ -93,7 +195,7 @@
       border-radius: 12px;
       font-size: 1.1rem;
       color: rgb(0, 0, 0);
-      background: hsl(345deg 100% 47%);
+      background: hsl(345, 100%, 50%);
       will-change: transform;
       transform: translateY(-4px);
       transition: transform
@@ -133,7 +235,101 @@
       outline: none;
      }
      
+     
+     .hog {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline-offset: 4px;
+      transition: filter 250ms;
+      user-select: none;
+      touch-action: manipulation;
+      z-index: 2;
+     }
+     
+     .shadow1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.25);
+      will-change: transform;
+      transform: translateY(2px);
+      transition: transform
+         600ms
+         cubic-bezier(.3, .7, .4, 1);
+     }
+     
+     .edge1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(
+         to left,
+         hsl(245, 98%, 21%) 0%,
+         hsl(239, 97%, 50%) 8%,
+         hsl(239, 97%, 45%) 92%,
+         hsl(244, 98%, 21%) 100%
+       );
+     }
+     
+     .front1 {
+      display: block;
+      position: relative;
+      padding: 12px 27px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: rgb(0, 0, 0);
+      background-color: rgb(56, 56, 255);
+      will-change: transform;
+      transform: translateY(-4px);
+      transition: transform
+         600ms
+         cubic-bezier(.3, .7, .4, 1);
+     }
+     
+     button:hover {
+      filter: brightness(110%);
+     }
+     
+     button:hover .front1 {
+      transform: translateY(-6px);
+      transition: transform
+         250ms
+         cubic-bezier(.3, .7, .4, 1.5);
+     }
+     
+     button:active .front1 {
+      transform: translateY(-2px);
+      transition: transform 34ms;
+     }
+     
+     button:hover .shadow1 {
+      transform: translateY(4px);
+      transition: transform
+         250ms
+         cubic-bezier(.3, .7, .4, 1.5);
+     }
+     
+     button:active .shadow1 {
+      transform: translateY(1px);
+      transition: transform 34ms;
+     }
+     
+     button:focus:not(:focus-visible) {
+      outline: none;
+     }
+
+
+
   </style>
-
-
 </div>
