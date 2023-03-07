@@ -9,19 +9,30 @@
 
 <div  id="Neews" class="Neews">
 <p class="t1d">05/03/2023</p>
+
 <p class="t1">Aggiunta casella news:
-  Qui potete leggere le novità sul sito
+  Qui potete leggere le novità sul sito</p>
+
 <p class="t1d">05/03/2023</p>
+
 <p class="t1">Nuovo suono disponibile:
-  Da oggi disponibile hogrider EARRAPE 
-</p>
-</p>
+  Da oggi disponibile hogrider EARRAPE</p> 
+
+ <p class="t1d">07/03/2023</p>
+
+<p class="t1">Nuovo suono disponibile:
+  Da oggi disponibile Indian loud music</p>
 
 </div>
 
 
 <img src="C:\Users\brutm\Downloads\keyboard_double_arrow_down_FILL0_wght400_GRAD0_opsz48.svg" onclick="Dd()" class="arrow">
 
+<audio id="indian m">
+  <source src="indian-music-mp3cut.mp3" type="audio/ogg">
+  <source src="indian-music-mp3cut.mp3" type="audio/mpeg">
+  your ddd
+</audio>
 
 
   <audio id="rick roll">
@@ -36,6 +47,11 @@
     your 
   </audio>
 
+<button onclick="playdaAudio()" type="audio7ogg" class="indian">
+<span class="shadow2"></span>
+<span class="edge2"></span>
+<span class="front2"><b>Indian</b></span>
+</button>
 
 
   <button onclick="playdAudio()" type="audio7ogg" class="hog">
@@ -77,11 +93,19 @@ function Dd(){
       z.play(); 
     } 
     
-    function pausedAudio() { 
+    function pauseAudio() { 
       z.pause(); 
     } 
 
-
+    var y = document.getElementById("indian m"); 
+    
+    function playdaAudio() { 
+      y.play(); 
+    } 
+    
+    function pauseAudio() { 
+      y.pause(); 
+    } 
 
 
     console.log("gfgf");
@@ -330,6 +354,97 @@ background-color: #ffffff;
      }
 
 
+     .indian {
+      position: absolute;
+      top: 40%;
+      left: 60%;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline-offset: 4px;
+      transition: filter 250ms;
+      user-select: none;
+      touch-action: manipulation;
+      z-index: 2;
+     }
+     .shadow2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.25);
+      will-change: transform;
+      transform: translateY(2px);
+      transition: transform
+         600ms
+         cubic-bezier(.3, .7, .4, 1);
+     }
+     
+     .edge2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: linear-gradient(
+         to left,
+         hsl(133, 98%, 21%) 0%,
+         hsl(130, 99%, 40%) 8%,
+         hsl(130, 97%, 42%) 92%,
+         hsl(133, 98%, 21%) 100%
+       );
+     }
+     
+     .front2 {
+      display: block;
+      position: relative;
+      padding: 12px 27px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      color: rgb(0, 0, 0);
+      background-color: rgb(0, 255, 55);
+      will-change: transform;
+      transform: translateY(-4px);
+      transition: transform
+         600ms
+         cubic-bezier(.3, .7, .4, 1);
+     }
+     
+     button:hover {
+      filter: brightness(110%);
+     }
+     
+     button:hover .front2 {
+      transform: translateY(-6px);
+      transition: transform
+         250ms
+         cubic-bezier(.3, .7, .4, 1.5);
+     }
+     
+     button:active .front2 {
+      transform: translateY(-2px);
+      transition: transform 34ms;
+     }
+     
+     button:hover .shadow2 {
+      transform: translateY(4px);
+      transition: transform
+         250ms
+         cubic-bezier(.3, .7, .4, 1.5);
+     }
+     
+     button:active .shadow2 {
+      transform: translateY(1px);
+      transition: transform 34ms;
+     }
+     
+     button:focus:not(:focus-visible) {
+      outline: none;
+     }
 
   </style>
 </div>
